@@ -294,6 +294,12 @@ def user_stats(df):
     
     #To enhance output format
     print('-'*40)
+
+def raw_data(df):
+    count = 0
+    while (input("Press enter to see row data (Enter 'no' to skip): ")!= 'no'):
+        count = count+5
+        print(df.head(count))
     
 
 def main():
