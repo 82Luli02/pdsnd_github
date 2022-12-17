@@ -294,6 +294,22 @@ def user_stats(df):
     
     #To enhance output format
     print('-'*40)
+
+def raw_data(df):
+    """
+    This function prompts the user if they want to see 5 lines of raw data.
+    It continue iterating these prompts and displaying the next 5 lines of raw data at each iteration,
+    and stops the program when the user enters 'no' or there is no more raw data to display.
+    
+    Args:
+        (Dataframe) df - Pandas DataFrame containing city data filtered by month and day
+        
+    No returns (just printing)
+    """
+    count = 0
+    while (input("Press enter to see row data (Enter 'no' to skip): ")!= 'no'):
+        count = count+5
+        print(df.head(count))
     
 
 def main():
@@ -306,12 +322,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         
-        count = 0
-        while (input("Press enter to see row data (Enter 'no' to skip): ")!= 'no'):
-            count = count+5
-            print(df.head(count))
+        raw_data(df)
             
-        
         restart = input('\nWould you like to restart? (Enter yes or no)\n')
         if restart.lower() != 'yes':
             break
