@@ -7,10 +7,14 @@
 Explore US Bikeshare Data project
 
 ### Description
-Describe what your project is about and what it does
+In this project, I created Python code to import US bike share data and used descriptive statistics to answer interesting questions about it.
+In addition, this script takes raw input to create an interactive terminal experience that displays this information.
 
 ### Files used
-Include the files used
+1. bikeshare.py 
+2. chicago.csv
+3. new_york_city.csv
+4. washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
